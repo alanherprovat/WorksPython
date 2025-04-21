@@ -37,7 +37,8 @@ function App() {
       formData.append('notebookName', 'micrOCR.ipynb');
 
       const response = await axios.post(
-        'http://172.16.1.81:8000/api/micrScanner',
+        // 'http://172.16.1.81:8000/api/micrScanner',
+        'http://192.168.115.60:8000/api/micrScanner',
         formData,
         {
           headers: {
